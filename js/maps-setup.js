@@ -23,20 +23,23 @@
 // we do this here to make sure we can access them
 // whenever we need to -- they have 'global scope'
 
+// 55.4907, -1.594
 // map initialization variables
 let projectMap, // this will hold the map once it's initialized
-    myCenter = [ 55.4907, -1.594], // *latitude*, then longitude
+    myCenter = [37.427475, -122.169716], // *latitude*, then longitude
     myZoom = 7; // set your preferred zoom here. higher number is closer in.
                 // I set the zoom wide to give access to context before zooming in
 
-
+                
 // I'm complicating things a bit with this next set of variables, which will help us
 // to make multi-colored markers
 // color options are red, blue, green, orange, yellow, violet, grey, black
 // just substitute the color name in the URL value (just before `.png`)
 const greenURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
       yellowURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png',
-      greyURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png';
+      greyURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png',
+      redURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+      blueURL = 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png';
 
 // create new icon classes
 // I've added this just in case you want very fine control over your marker placement
@@ -52,7 +55,10 @@ const myIconClass = L.Icon.extend({
 // also https://leafletjs.com/reference-1.5.0.html#icon
 const gryfIcon = new myIconClass({iconUrl: yellowURL}),
       slythIcon = new myIconClass({iconUrl: greenURL}),
-      mysteryIcon = new myIconClass({iconUrl: greyURL});
+      mysteryIcon = new myIconClass({iconUrl: greyURL}),
+      companyIcon = new myIconClass({iconUrl: redURL}),
+      universityIcon = new myIconClass({iconUrl: blueURL});
+      
 
 
 // storing colors in variables, to make it easier to change all the related features at once
@@ -60,7 +66,9 @@ let gryfCol = 'yellow',
     slythCol = 'green',
     hogCol = 'grey',
     meadeCol = 'rgb(40,40,120)',
-    towerCol = 'blue';
+    towerCol = 'blue',
+    companyCol = 'red',
+    universityCol = 'blue';
 
 ///////////////////////////////////////////////////////////////////////
 // CHANGE THESE VARIABLE NAMES AND THEIR VALUES TO SUIT YOUR PROJECT //
@@ -85,6 +93,30 @@ let gryfCol = 'yellow',
 // These are placeholder arrays; we use them to generate other JS variables
 // that will be more useful to us later on
 // but writing them this way keeps the code as D.R.Y. as possible
+let companyMarkerInfo = [
+    {position: [37.412040, -122.148260],
+     title: "HP Inc.",
+     description: '<p>previously Hewlett-Packard</p>'
+    }
+];
+let universityMarkerInfo = [
+    {position: [37.427475, -122.169716],
+     title: "Stanford",
+     description: '<p>received the "lion’s share of attention"</p>'
+    },
+    {position: [37.870628, -122.279762],
+     title: "Berkeley",
+     description: '<p>TODO"</p>'
+    },
+    {position: [37.347141, -121.934517],
+     title: "Santa Clara",
+     description: '<p>TODO"</p>'
+    },
+    {position: [37.335186, -121.881073],
+     title: "San Jose State",
+     description: '<p>TODO"</p>'
+    }
+];
 let slythMarkerInfo =
     [
         {position: [55.48997247517858,-1.5944015979766843],
@@ -114,9 +146,13 @@ let slythMarkerInfo =
 
 
 let gryfMarkers = processMarkerLayer(gryfMarkerInfo,
-                                     {description: 'Gryffindor: People and Places', defaultIcon: gryfIcon}),
+                                    {description: 'Gryffindor: People and Places', defaultIcon: gryfIcon}),
     slythMarkers = processMarkerLayer(slythMarkerInfo,
-                                      {description: 'Slytherin: Peple and Places', defaultIcon: slythIcon});
+                                    {description: 'Slytherin: Peple and Places', defaultIcon: slythIcon}),
+    companyMarkers = processMarkerLayer(companyMarkerInfo,
+                                    {description: 'Companies', defaultIcon: companyIcon}),
+    universityMarkers = processMarkerLayer(universityMarkerInfo,
+                                    {description: 'Universities', defaultIcon: universityIcon});
 
 
 
@@ -235,7 +271,7 @@ let paths = processManualLayers([vanishingPath, tunnelPath, horcruxPath], {descr
 // these layers will be added to the map
 // you should change these variable names
 // to align with the variables you've defiend above
-let allLayers = [gryfMarkers, slythMarkers, towns, houses, paths];
+let allLayers = [gryfMarkers, slythMarkers, companyMarkers, universityMarkers, towns, houses, paths];
 
 
 ///////////////////////////////////////
