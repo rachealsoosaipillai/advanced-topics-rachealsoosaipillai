@@ -10,6 +10,8 @@ section#intro {
     grid-area: intro;
     background-color: var(--color-highlight1);
     border: 1px solid var(--color-custom-borders);
+    color: var(--color-darkBrown);
+    padding-bottom: 250px;
 }
 
 
@@ -25,10 +27,20 @@ section#legend {
     border: 1px solid var(--color-custom-borders);
 }
 
+section#legend h1 {
+    margin: 2px 2px 2px 4px;
+    font-size: 2.3em;
+}
+
 section#maintext {
     grid-area: main;
     background-color: var(--color-highlight1);
     border: 1px solid var(--color-custom-borders);
+    color: var(--color-darkBrown);
+}
+
+section#maintext p {
+    padding: 0px 10px 0px 10px;
 }
 
 /* we use an extra div here to allow the "legend" text to sit by itself */
@@ -44,17 +56,17 @@ div#map_legend {
 
 }
 div#map_legend div.pointer {
-    border: 1px black solid;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* border: 1px black solid; */
+    /* border-radius: 10px; */
+    margin: 5px;
     /* flex-basis: 500px; */
     cursor:pointer;
+    padding-left: 5px;
+    background: #dad0c6;
 }
 
 div.pointer h1 {
     font-size: 1.5em;
-    image
 }
 
 div.pointer img {
@@ -103,12 +115,8 @@ div.leaflet-popup-content img {
 extra css instructions here, or adding classes when you create the 
 legneds in javascript. Advisable! */
 
-div#map_legend h1 {
-    
-}
-
-div#map_legend h3 {
-
+h1, h2, h3 {
+    color: var(--color-darkBrown);
 }
 
 
@@ -121,13 +129,15 @@ button.rounded {
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
 button#hide {
   background:orange;
 }
 button#reset {
-  background:green;
+  background: #e44376;
+  color: #f9e0d9;
+  vertical-align: middle;
 }
 
 /* use these last few to style the text inside the

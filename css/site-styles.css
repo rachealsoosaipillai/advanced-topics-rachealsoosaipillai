@@ -13,7 +13,9 @@
    https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
  */
 :root {
-    --color-primary: #1a9f60;
+    --color-primary: #e44376;
+    --color-darkBrown: #5d4954;
+    --color-lightBrown: #c7b0b4;
     --color-lightGrey: #d2d6dd;
     --color-grey: #7e818b;
     --color-darkGrey: #3f4144;
@@ -25,9 +27,9 @@
     --font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next",
                    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
                    "Droid Sans", "Helvetica Neue", sans-serif;
-    --color-custom-borders: rgb(110,30,30);
-    --color-highlight1: rgba(30,30,110,0.2);
-    --color-highlight2: rgba(110,30,30,0.2);
+    --color-custom-borders: #754f5b;
+    --color-highlight1: #f9e0d9;
+    --color-highlight2: #e6dbd0;
     --default-bg: white;
 }
 
@@ -63,5 +65,5 @@ footer#page-footer {
 /* since this is a simple site, use of variables here is a little overkill. */
 /* However, it may still be in your interest to use them.  */
 header#page-header, footer#page-footer {
-    background-color: var(--color-lightGrey);
+    background-color: var(--color-lightBrown);
 }

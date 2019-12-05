@@ -13,8 +13,8 @@ let menuEntries = [
 ];
 
 
-let authorName='YOUR NAME HERE',
-    footerHtml=`HTML projects by ${authorName}, originally written for <a href="https://digitalhistory.github.io/dh-website/">HIS393: Digital History</a>`;
+let authorName='Racheal Soosaipillai',
+    footerHtml=`HTML projects by ${authorName}, originally written for <a href="https://digitalhistory.github.io/">HIS393: Digital History</a>`;
 
 
 function makeMenu (items= menuEntries, path = location.pathname) {
