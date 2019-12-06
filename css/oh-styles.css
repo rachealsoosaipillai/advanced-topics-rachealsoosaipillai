@@ -17,6 +17,7 @@ section#intro {
     grid-area: intro;
     background-color: var(--color-highlight1);
     border: 1px solid var(--color-custom-borders);
+    color: var(--color-darkBrown);
 }
 
 /* popcorn event container: 
@@ -37,6 +38,7 @@ aside#popcorn-container {
     max-height: 100%;
     /* space things out! */
     justify-content: space-around;
+    color: var(--color-darkBrown);
 }
 
 aside#popcorn-container > * {
@@ -53,6 +55,7 @@ aside#popcorn-container > * {
     /* an example of setting the figure as a bit larger than the others.  */
     flex-basis: calc(var(--default-width)*4/3);
     max-width: 100%;
+    text-align: center;
 }
 
 #popcorn-container .leaflet-plugin, #popcorn-container .googlemap-plugin {
@@ -66,6 +69,7 @@ section#maintext {
     grid-area: main;
     background-color: var(--color-highlight1);
     border: 1px solid var(--color-custom-borders);
+    color: var(--color-darkBrown);
 }
 
 
@@ -86,19 +90,32 @@ section#maintext {
     
 }
 
+figcaption {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
 
+.markdown-plugin {
+    max-height: 100%;
+}
 
+.markdown-plugin p {
+    font-size: 1.8rem;
+}
+
+.markdown-plugin img, .figure-plugin img {
+    max-width: 80%;
+    max-height: 80%;
+}
 
 img.image-right {
-    display: inline-block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     float: right;
     padding-left: 5px;
-}
-
-figcaption {
-    font-size: 0.7em;
-    font-weight: bold;
-    text-align: center;
+    /* max-width: 100%; */
+    /* height: auto; */
+    padding-bottom: 15px;
 }
