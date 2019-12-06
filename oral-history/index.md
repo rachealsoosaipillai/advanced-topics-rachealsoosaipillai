@@ -1,34 +1,25 @@
-# Your Title should go in the appropriate place in `index.html`, not here! Title is itself set only in the `<head>` element
+Several companies in Silicon Valley have a genealogy chart in their lobbies that trace their origins back to Fairchild Semiconductor and William Shockley [(Assimakopoulos et al., p. 182)](https://pdfs.semanticscholar.org/6ce1/3ca7f5a813c37247b6b30073cde0e5286844.pdf). This type of chart captures the entrepreneurial ethos that created a variety of new start-ups in the region, thus making the Valley a global centre of the technology industry. Many engineers and other employees of Silicon Valley companies have preferred launching their own start-ups, in the hopes that they will strike gold, rather than continuing to work for a company that is already large and successful. This spirit of entrepreneurship was created by the founders of Fairchild Semiconductor when they left Shockley Semiconductor Laboratory to establish their own company. Moreover, the founders eventually departed Fairchild to create new companies and consequently created a <a href="javascript:seek(44)">"technology fountain"</a>.
 
-## Use headings only if you want to have subsections in your essay
+<figure>
+    <img src="http://www.startup-book.com/wp-content/uploads/2014/08/endeavor-insight-sv-2-retina.png"
+         alt="Growth of the Computer Chip Industry"
+         title="Growth of the Computer Chip Industry">
+    <figcaption>Figure 1. Fairchildren companies and their spinoffs.</figcaption>
+</figure>
 
+William Shockley, a recipient of the Nobel Prize along with John Bardeen and Walter Brattain of Bell Laboratories for creating the first successful transistor, established his own company Shockley Semiconductor Laboratory with the aid of Arnold Becman of Beckman Instruments [(Wolfe, p. 346-374)](https://web.stanford.edu/class/e145/2007_fall/materials/noyce.html). Although Shockley was considered to be a genius for finding and recruiting talented employees by many in the industry, he was a poor manager. Only two years after its founding, the company was suffering from extreme internal disturbance mainly caused by Shockley’s strikingly unusual management style. For instance, Shockley publicly posted employees’ salaries on a bulletin board and had employees rate each other on a regular basis. Soon after, Shockley became paranoid that an employee was sabotaging the project and forced the employee, that he believed to be the culprit, to do a polygraph examination [(Wolfe, p. 346-374)](https://web.stanford.edu/class/e145/2007_fall/materials/noyce.html). Furthermore, several employees had differences of opinion with Shockley regarding the technology they were researching and developing. Shockley preferred to create a four-layer diode whereas Robert Noyce, along with Gordon Moore and Jean Hoerni, preferred transistors. This contributed to the overall dissatisfaction with Shockley as a boss and eventually led to Noyce, Moore, Hoerni, and five other engineers developing their own dreams of entrepreneurship. In 1957, these employees left Shockley’s company and founded Fairchild Semiconductor. Shockley felt betrayed by these engineers and branded them the <a href="javascript:seek(34)">“traitorous eight”</a>. In contrast to Shockley's company, Fairchild was almost immediately successful. The company began manufacturing high-frequency transistors, using techniques created at Shockley’s company, and was making enormous profits by the end of 1958 [(Assimakopoulos et al., p. 184)](https://pdfs.semanticscholar.org/6ce1/3ca7f5a813c37247b6b30073cde0e5286844.pdf).
 
+Fairchild’s products were in demand by 1957 since many manufacturers of radios and other devices wanted to use transistors over vacuum tubes due to their reliability and smaller size. In addition, Noyce helped develop the first silicon integrated circuit with a new insulating technique, created by fellow founder Hoerni, leading to Fairchild becoming one of the Valley’s richest companies [(Assimakopoulos et al., p. 184)](https://pdfs.semanticscholar.org/6ce1/3ca7f5a813c37247b6b30073cde0e5286844.pdf). Noyce’s integrated circuit eventually because a standard in the industry and more importantly, the circuit transforced Fairchild into a leader of the semiconductor community and helped place Silicon Valley on its trajectory to become a global leader in high technology.
 
-Add your content here, including _markup_ of **various kinds**. Now you can just write! But you should be aware of a couple of advanced features of markdown:
-- you can embed HTML directly n a markdown file. This is great if you want to add complex attributes like **classes**, e.g. to your `img` tags so that they display properly (though you can also use the `{.css-selector}` method ddescribed in the main readme.
-  - a particular use of embedded HTML is for funky javascript function links. I've written a simple function that will seek to a particular time code in seconds.  You can call it like this: `<a href="javascript:seek(75)">seek to 1:15</a>`, but `[seek to 1:15](javascript:seek(75))` won't render properly, so you have to type the whole link in, as seen here: <a href="javascript:seek(75)"> seek to 1:15</a>.
-  - also, markdown-it supports pandoc-style footnotes, which can be helpful sometimes. Here are some examples of footnotes at work:
+Despite the significant impact of integrated circuits in Silicon Valley, Fairchild contributed something much more meaningful to the Valley: a new vision of management that dismissed hierarchical corporate culture. This vision, most likely a response to Shockley’s authoritarian style of management, spread over the Valley as Fairchild employees left the company to establish their own companies. Journalists have often identified two components of organizational culture in Silicon Valley companies that make them unique: an atmosphere conducive to community and an entrepreneurial ethos that in turn leads to the development of several start-ups [(Assimakopoulos et al., p. 184)](https://pdfs.semanticscholar.org/6ce1/3ca7f5a813c37247b6b30073cde0e5286844.pdf). This new culture was significantly different from the hierarchical culture imposed by corporation in the East that had several layers of protocol as well as privileges for people with superior positions. In addition, Fairchild fostered entrepreneurial risk-taking, a very important aspect of culture that aided the Valley in becoming the successful region it is today. This positive attitude towards risk-taking contributed to a large number of start-ups being created in the Valley, and thus entrepreneurial activity is often traced back to these “traitorous eight” who departed Shockley Semiconductor Laboratory to establish Fairchild Semiconductor.
 
-    Footnote 1 link[^first].
+Although Fairchild was quite successful, over time several key employees left the company to create their own start-ups. The first to leave was a manager named Ed Baldwin who formed Rheem  Semiconductor along with ten other Fairchild employees. Later, four of Fairchild’s founders who were discontent with Fairchild’s parent firm, Fairchild Camera and Instrument Corporation, left the company in 1961 and founded what is now known as Teledyne Semiconductor. Moreover, in the same year several more important Fairchild employees left to establish Signetics [(Laws)](https://computerhistory.org/blog/fairchild-and-the-fairchildren/). Although these employees created their own spinoff companies that also manufactured semiconductors, the most notable Fairchildren company created by Fairchild founders Noyce and Moore, along with Andrew Grove, was Intel. By 1986, there were 31 semiconductor firms that were direct descendants of Fairchild [(Assimakopoulos et al., p. 185)](https://pdfs.semanticscholar.org/6ce1/3ca7f5a813c37247b6b30073cde0e5286844.pdf). Thus, Fairchild was indeed a fountain for technology as it spread the spirit of entrepreneurship throughout Silicon Valley.
 
-    Footnote 2 link[^second].
+Fairchild’s values of community and entrepreneurship greatly contributed towards the success of Silicon Valley and transformed the region into a global technology centre. The new <a href="javascript:seek(129)">“start-up” culture</a>, full of collaboration, democractic values, and risk-taking, created by Fairchild was quickly diffused through the Valley and led to the creation of many generations of Fairchildren spin-off companies up until the mid-1980s. This culture continues to exist in Silicon Valley today and aid in the development of new technology and companies in the region.
 
-    Inline footnote^[Text of inline footnote] definition.
-
-    Duplicated footnote reference[^second].
-
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-and remember tables, if you want them: 
-
-| heading | Heading |
-| ------| ----- |
-| content | content |
-| content | content |
-| content | content |
-{.striped}
+<figure>
+    <img src="https://images.computerhistory.org/blog-media/fairchildren_endeavor-stocks.jpg"
+         alt="Companies Traced Back to Fairchild"
+         title="Companies Traced Back to Fairchild">
+    <figcaption>Figure 2. Large public companies in 2014 traced back to Fairchild.</figcaption>
+</figure>

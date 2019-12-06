@@ -90,10 +90,13 @@ section#maintext {
     
 }
 
+figure {
+    text-align: center;
+}
+
 figcaption {
     font-size: 0.8em;
     font-weight: bold;
-    text-align: center;
 }
 
 .markdown-plugin {
