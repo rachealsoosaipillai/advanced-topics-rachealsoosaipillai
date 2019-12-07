@@ -1,0 +1,15 @@
+/* set display:grid here, but use sub-files to set up grid items on indiv pages */
+.main-container {
+    flex-grow: 1;               /*all this item to grow*/
+    display: grid;
+    background-color: var(--color-highlight1);    /*reset so that it's obvious when child elements have CSS issues*/
+}
+
+section#intro, section#maintext {
+    border: 1px solid var(--color-custom-borders);
+    padding: 10px 25px 10px 25px;
+}
+
+section#intro {
+    background-color: var(--color-highlight2);
+}
